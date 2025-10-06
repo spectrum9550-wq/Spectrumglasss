@@ -1,0 +1,442 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+body {
+  background-color: white;
+  color: rgb(37, 4, 4);
+  height: 1000vh;
+}
+
+#main {
+  display: flex;
+  gap: 50px;
+  position: absolute;
+  left: 94%;
+  transform: translateX(-50%);
+  top: 20px;
+  cursor: pointer;
+}
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-grid .one {
+  background: #0f1335;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px; /* default desktop size */
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(20, 20, 67, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-grid .one img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-grid .one h2 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.product-grid .one h4 {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin: 3px 0;
+}
+
+/* Hover effect */
+.product-grid .one:hover {
+  transform: translateY(-5px);
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* space between products */
+}
+
+/* Each product item */
+.product-grid .one {
+  width: 23%; /* 4 items per row on desktop */
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+/* Hover zoom effect */
+.product-grid .one .image {
+  transition: transform 0.3s ease; /* smooth zoom */
+  cursor: pointer;
+}
+
+.product-grid .one .image:hover {
+  transform: scale(1.1); /* zoom in slightly */
+}
+
+/* Tablets: 2 items per row */
+@media (max-width: 1024px) {
+  .product-grid .one {
+    width: 48%; /* 2 items per row */
+  }
+}
+
+/* Mobile: 1 item per row */
+@media (max-width: 768px) {
+  .product-grid .one {
+    width: 100%; /* 1 item per row */
+  }
+}
+
+#main1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: -82px;
+  padding: 0px;
+  min-height: 71vh;
+  margin-left: 200px;
+  margin-top: 83px;
+  margin-bottom: 83px;
+  position: relative;
+  top: 0px;
+  margin-right: 161px;
+  z-index: -5;
+}
+
+#main2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 78px;
+}
+
+#h1,
+#h2 {
+  text-align: center;
+  margin-top: 0px;
+}
+.one-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main3 ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  text-align: justify;
+  /* width: 80px; */
+}
+
+.nav3 {
+  position: relative;
+  left: 20px;
+}
+
+#main4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  height: auto;
+  width: 100%;
+  margin-left: 24px;
+}
+#truck {
+  position: relative;
+  right: 20px;
+  margin-top: 10px;
+}
+
+.browser {
+  text-align: center;
+}
+
+.main14 {
+  border: 1px solid rgb(23, 18, 63);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.one {
+  border: 2px solid rgb(23, 18, 63);;
+  padding: 10px;
+  height: 460px;
+}
+#ones {
+  border: 2px solid rgb(23, 18, 63);;
+  padding: 10px;
+  height: 460px;
+}
+
+#img {
+  margin-top: 8px;
+  transition: transform 0.5s ease;
+  margin-left: 0px;
+}
+
+#img:hover {
+  margin-top: 8px;
+  transform: scale(1.1);
+  transform-origin: center;
+}
+.star-icon {
+  font-size: 0.8rem;
+  display: flex;
+  color: red;
+  margin-top: 5px;
+}
+
+#adv {
+  text-align: center;
+}
+#main6 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin-left: 64px;
+  margin-top: 44px;
+}
+
+#expdel {
+  display: flex;
+  gap: 20px;
+}
+#contents {
+  margin-top: 20px;
+}
+
+#Subscribe:hover {
+  background-color: red;
+}
+#Subscribe {
+  width: 260px;
+  margin-left: 5px;
+}
+li {
+  padding: 2px;
+}
+
+
+/* product page  */
+.productimgs1,
+.productimgs2,
+.productimgs3,
+.productimgs4 {
+  border: 1px solid white;
+  margin: 10px;
+}
+#productmain {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#productdetails {
+  margin-right: 72px;
+}
+#product {
+  display: flex;
+  gap: 20%;
+  justify-content: center;
+}
+#product :hover {
+  background-color: red;
+}
+#productimgs11 {
+  margin-right: 262px;
+}
+#specific {
+  background-color: red;
+}
+/* need to check */
+.Overview.Review:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#productdetails2 {
+  display: flex;
+  gap: 90px;
+  margin: 2px;
+  margin-top: 40px;
+}
+#RelatedPr {
+  text-align: center;
+}
+#productdetails3 {
+  /* need to check */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+#green {
+  display: flex;
+  gap: 100px;
+}
+#button {
+  display: flex;
+  gap: 20px;
+}
+
+
+/* dropdow items */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #1d5a9c;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content li:hover {
+  background-color: #ddd;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Banner section */
+.banner-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Image + Name */
+.banner-main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Banner image with gradient overlay */
+.banner-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  position: relative;
+}
+
+.banner-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* SpectrumGlass text with subtle animation */
+.banner-text {
+  font-size: 3rem;
+  color: #1d5a9c;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  animation: glowText 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  0% {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    text-shadow: 4px 4px 15px rgba(29, 90, 156, 0.7);
+  }
+  100% {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Scrolling info ticker */
+.info-ticker {
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, #1d5a9c, #4ea1d5);
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.info-ticker p {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  animation: scroll-info 20s linear infinite;
+}
+
+/* Smooth continuous scrolling */
+@keyframes scroll-info {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* For the container holding all your products */
+.product-list-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to stack on smaller screens */
+  justify-content: space-around;
+}
+
+/* For individual product cards */
+.product-card {
+  /* Use a max-width and let flexbox handle the rest */
+  max-width: 300px;
+  flex-basis: 100%; /* Default to full width on mobile */
+  margin: 10px;
+}
+/* Default styles apply to all screen sizes (e.g., 3 columns wide) */
+.product-card {
+  width: 30%; /* Three cards fit on a desktop row */
+  float: left;
+}
+
+/* Styles inside this block only apply when the screen is 600 pixels wide or less (mobile) */
+@media screen and (max-width: 600px) {
+  .product-card {
+    width: 95%; /* One card per row on mobile */
+    float: none;
+  }
+  /* You may also need to adjust font sizes or padding here */
+}
